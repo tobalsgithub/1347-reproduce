@@ -21,7 +21,7 @@ module.exports = {
 					if(err) return res.error(err);
 
 					// Do some weird save
-					t2.message = msg.id;
+					t2.message = msg;
 
 					t2.save(function(err) {
 						if(err) return res.error(err);
